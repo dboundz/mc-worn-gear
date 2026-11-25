@@ -1,0 +1,24 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="worngear"
+version="1.0.0"
+displayName="Worn Gear"
+description='''Shows worn armor and the elytra beside the hotbar, with durability.'''
+displayTest="IGNORE_SERVER_VERSION"
+
+[[dependencies.worngear]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.1.265,)"
+    ordering="NONE"
+    side="CLIENT"
+
+[[dependencies.worngear]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.21.1,1.21.2)"
+    ordering="NONE"
+    side="CLIENT"

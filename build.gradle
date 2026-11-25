@@ -1,0 +1,38 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.144'
+}
+
+version = mod_version
+group = 'com.worngear'
+
+base {
+    archivesName = 'worngear'
+}
+
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(21)
+}
+
+neoForge {
+    version = neo_version
+
+    runs {
+        client {
+            client()
+            gameDirectory = file("${System.getProperty('user.home')}/.cache/worngear-build/runs/client")
+        }
+    }
+
+    mods {
+        worngear {
+            sourceSet sourceSets.main
+        }
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+layout.buildDirectory = file("${System.getProperty('user.home')}/.cache/worngear-build")
