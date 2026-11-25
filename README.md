@@ -2,6 +2,8 @@
 
 A NeoForge 1.21.1 client mod. Worn armor and the elytra show up just to the right of the hotbar, each with a durability bar.
 
+<img width="904" height="410" alt="Worn armor shown to the right of the hotbar, each with a green durability bar" src="docs/hotbar.png" />
+
 ## Download
 
 - [worngear-1.0.0.jar](https://github.com/dboundz/mc-worn-gear/raw/main/dist/worngear-1.0.0.jar)
